@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+header {
+    background-image: url(images/cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+    background-color: grey;
+}
+
+.overlay {
+    position:absolute;
+    z-index:1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0 !important;
+    margin: 0 !important;
+    background-color: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+
+nav {
+    position: absolute;
+    top:auto;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+    text-align: right;
+}
+ 
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 2px;
+    padding-left: 10px;
+    
+
+}
+
+nav li span{
+    padding-left: 5px;
+}
+
+li a {
+    padding: 1px;
+    background-color: grey;
+    text-decoration: none;
+    position: right;
+}
+
+.cart ion-icon { 
+vertical-align: bottom;
+font-size: 20px;
+padding-right: 5px;
+}
+
+.cart a {
+    background-color: royalblue;
+    color:#fff;
+    cursor:pointer;
+
+text-decoration: none;
+}
+
+.container,
+product-container{
+
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 25px;
+    justify-content: center;
+    display: center;
+}
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.image{
+    float: left;
+    width: 32%;
+    padding: 5px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    
+ }
+
+
+ .add-cart {
+     position: absolute;
+     width: 100%;
+     background-color: none;
+     transition: all 0.3s ease-in-out;
+     cursor:pointer;
+     text-align: left;
+
+    }
+
+    /*-----cart page-----*/
+
+    .products-container{
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .product-header{
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 4px solid lightgray;
+        margin: 0 auto;
+    }
+
+    .product-title{
+        width: 45%;
+
+    }
+
+    .price {
+        width: 15%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .total {
+        width: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity {
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    /*------footer-----*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.footer{
+    width: 100vw;
+    display:block;
+    overflow: hidden;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: #18181a;;  
+}
+
+.inner-footer{
+    display:block;
+    margin: auto;
+    width: 1100px;
+}
+.inner-footer .logo-container{
+    width: 25%;
+    float: left;
+    height: 100%;
+    display: black;
+}
+.inner-footer .logo-container img{
+    width: 100px;
+    height: auto;
+
+}
+.inner-footer .footer-third{
+    width: calc(21.66% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+.inner-footer .footer-third: :last-child{
+    margin-right: 0;
+}
+.inner-footer .footer-third h1{
+    font-size: 14px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.inner-footer .footer-third a{
+    font-size: 13px;
+    color: white;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
