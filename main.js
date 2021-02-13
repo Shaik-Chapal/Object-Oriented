@@ -129,7 +129,7 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
 
     let productContainer = document.querySelector
-    ("products-container");
+    ("products");
 
     console.log(cartItems);
 
@@ -137,13 +137,21 @@ function displayCart(){
 
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
-            productContainer.innerHTML += 
-        
-            <div class= "product">
+            productContainer.innerHTML += `
+            <div class="product">
                 <ion-icon name="close-circle-outline"></ion-icon>
-                <img src="./images/€{item.tag}.jpg"></img>
-                    <span>€{item.name}></span>
-                    </div>
+                <img src="./images/${item.tag}.jpg">
+                <span>${item.name}</span>
+
+            </div>
+
+            <div class="quantity">
+            <ion-icon name="caret-back-circle-outline"></ion-icon>
+            <span>${item.inCart}</span>
+            </div>
+            `
+        
+
 
         });
 
